@@ -25,6 +25,7 @@ def parse_csv():
     with open(__file_path, "r") as f:
         reader = csv.reader(f)
         next(reader, None)
+        
         for row in reader:
             __parsed_rows.append({
                 'date':  row[__index['date']],
